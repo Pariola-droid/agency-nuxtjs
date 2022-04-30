@@ -1,21 +1,21 @@
 @import "utils/breakpoints";
-@import "utils/mixins";
-@import "utils/functions";
+// @import "utils/mixins";
+// @import "utils/functions";
 
 @import "core/reset";
-@import "core/variables";
-@import "core/globals";
+// @import "core/variables";
+@import "core/global";
 @import "core/fonts";
 
-@import "shared/links";
+// @import "shared/links";
 @import "shared/sections";
 @import "shared/fonts";
 
 // @import "components/nav";
-// @import "components/about";
+@import "components/about";
 // @import "components/contact";
 // @import "components/header";
 // @import "components/works";
 // @import "components/lottie";
 
-@import "pages/home";
+// @import "pages/home";
