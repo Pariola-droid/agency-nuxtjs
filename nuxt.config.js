@@ -7,9 +7,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Agency",
+    title: "Blaze Agency",
     htmlAttrs: {
-      lang: "en",
+      lang: "en"
     },
     meta: [
       { charset: "utf-8" },
@@ -18,9 +18,9 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Hi 👋🏻 my name is Tomide. I'm a frontend engineer based in Lagos Nigeria, focused on creating functional products and unique experiences on the web.",
+          "Blaze Agency is a fun project built with Nuxt.js and Vue.js. Still in the learning phase - First Nuxtjs site.."
       },
-      { name: "format-detection", content: "telephone=no" },
+      { name: "format-detection", content: "telephone=no" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
     script: [
@@ -29,19 +29,19 @@ export default {
         integrity: "sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=",
         crossorigin: "anonymous",
         type: "text/javascript",
-        body: true,
+        body: true
       },
       {
         src: "/webflow.js",
         type: "text/javascript",
-        body: true,
-      },
-    ],
+        body: true
+      }
+    ]
   },
 
   server: {
     port: 3000,
-    host: "0.0.0.0",
+    host: "0.0.0.0"
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -59,12 +59,12 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios",
+    "@nuxtjs/axios"
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {}
 };
