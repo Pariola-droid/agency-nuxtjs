@@ -1,3 +1,27 @@
 .navbar {
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-top: 21px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9998;
 
+  &__wrap {
+    width: 1320px;
+    height: 44px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    color: #fdfdfd;
+  }
 }
