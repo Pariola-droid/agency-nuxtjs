@@ -7,6 +7,7 @@
       crossorigin="anonymous"
       onload="this.rel='stylesheet'"
     />
+    <Navbar />
     <Nuxt />
   </div>
 </template>
