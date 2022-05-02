@@ -1,5 +1,7 @@
 <template>
-    <div>
-        
-    </div>
+  <div>
+    <Works />
+    <Services />
+    <AgencyWorks />
+  </div>
 </template>
