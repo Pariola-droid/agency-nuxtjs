@@ -72,4 +72,9 @@
       }
     }
   }
+  @include media(">=LGdesktop") {
+    margin: 0 auto 180px;
+    padding: 10px 20vw;
+    width: 100%;
+  }
 }

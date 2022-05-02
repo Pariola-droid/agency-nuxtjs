@@ -109,4 +109,8 @@
       }
     }
   }
+  @include media(">=LGdesktop") {
+    padding: 10px 20vw 180px;
+    width: 100%;
+  }
 }

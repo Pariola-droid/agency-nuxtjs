@@ -30,6 +30,11 @@ export default {
         crossorigin: "anonymous",
         type: "text/javascript",
         body: true
+      },
+      {
+        src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
+        type: "text/javascript",
+        crossorigin: "anonymous"
       }
     ]
   },
