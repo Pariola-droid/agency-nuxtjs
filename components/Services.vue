@@ -81,7 +81,6 @@
   </div>
 </template>
 <script>
-import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue";
 import VueLottiePlayer from "vue-lottie-player";
 export default {
   components: {
