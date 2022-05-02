@@ -41,6 +41,10 @@
         text-decoration: underline;
       }
     }
+    &-lottie {
+      height: 50px;
+      width: 50px;
+    }
     &-title {
       font-weight: 700;
       font-size: 24px;
@@ -70,7 +74,7 @@
     }
     &__card {
       width: 100%;
-      padding: 53px 33pxpx 62px 30px;
+      padding: 53px 33px 62px 30px;
     }
   }
 }
