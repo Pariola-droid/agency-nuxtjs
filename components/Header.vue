@@ -20,11 +20,6 @@
         <div class="header__wrapper__bottom-wrap">
           <div class="header__wrapper__bottom-wrap-left"></div>
           <div class="header__wrapper__bottom-wrap__right">
-            <img
-              class="header__wrapper__bottom-wrap__right-bg"
-              :src="require('../assets/svg/blue-bg.svg')"
-              alt=""
-            />
             <div class="header__wrapper__bottom-wrap__right-text">
               <h3>Better tech to better trade</h3>
             </div>

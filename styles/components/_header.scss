@@ -122,15 +122,11 @@
         border-radius: 8px;
         display: flex;
         align-items: flex-start;
-
-        &-bg {
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          left: 0;
-          top: 0;
-        }
-
+        background-image: url("~assets/svg/blue-bg.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        
         &-text {
           width: 323px;
           height: fit-content;
