@@ -39,15 +39,18 @@
     border-radius: 35px;
     cursor: pointer;
     align-items: center;
+    transition: all 0.3s ease-in;
     p {
       margin-left: 8.35px;
       font-size: 1.45rem;
       font-weight: 500;
     }
     &:hover {
+      transform: scale(1.05);
     }
   }
-  @media (max-width: 42rem) {
+
+  @include media("<=phone") {
     margin: 100px 0;
     padding: 0;
     &__top {

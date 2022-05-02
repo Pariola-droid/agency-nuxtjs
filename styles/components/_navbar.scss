@@ -9,6 +9,10 @@
   left: 0;
   z-index: 9998;
 
+  @include media("<=phone") {
+    display: none;
+  }
+
   &__wrap {
     width: 1320px;
     height: 44px;
