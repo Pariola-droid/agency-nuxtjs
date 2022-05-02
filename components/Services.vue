@@ -8,7 +8,15 @@
       </p>
     </div>
     <div class="services__card">
-      <img src="@/assets/images/media.svg" />
+      <div class="services__card-lottie">
+        <v-lottie-player
+          name="scooterAnim"
+          loop
+          :animationData="require('../assets/json/ux-design.json')"
+          :height="50"
+          :width="50"
+        />
+      </div>
       <div class="services__card-info">
         <h3 class="services__card-title">UI/UX Design</h3>
         <p class="services__card-description">
