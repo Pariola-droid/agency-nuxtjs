@@ -1,10 +1,10 @@
 <template>
   <div class="services">
     <div class="services__writeup">
-      <h2 class="services__tagline">Our service we can halp you</h2>
+      <h2 class="services__tagline">Our service we can help you with</h2>
       <p class="services__caption">
         We have many interesting services with profesional team, that will help
-        ypur work to be better
+        your work to be better
       </p>
     </div>
     <div class="services__card">
