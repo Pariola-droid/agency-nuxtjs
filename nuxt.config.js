@@ -30,11 +30,6 @@ export default {
         crossorigin: "anonymous",
         type: "text/javascript",
         body: true
-      },
-      {
-        src: "/webflow.js",
-        type: "text/javascript",
-        body: true
       }
     ]
   },
