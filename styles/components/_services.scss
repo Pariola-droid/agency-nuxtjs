@@ -1,7 +1,7 @@
 .services {
   margin: 0 0 180px;
   padding: 10px 135px;
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
   row-gap: 30px;
@@ -82,7 +82,6 @@
   }
   @include media(">=LGdesktop") {
     margin: 0 auto 180px;
-    padding: 10px 20vw;
-    width: 100%;
+    max-width: 1440px;
   }
 }
