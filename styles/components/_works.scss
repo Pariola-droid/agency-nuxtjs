@@ -47,7 +47,7 @@
     &:hover {
     }
   }
-  @media (max-width: 42rem) {
+  @include media("<=phone") {
     margin: 100px 0;
     padding: 0;
     &__top {

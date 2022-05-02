@@ -12,7 +12,7 @@
   &__wrap {
     width: 1320px;
     height: 44px;
-    background-color: aliceblue;
+    // background-color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,5 +23,63 @@
     font-size: 32px;
     line-height: 43px;
     color: #fdfdfd;
+  }
+
+  &__lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & li {
+      color: #fdfdfd;
+      margin: 0 20px;
+
+      & a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fdfdfd;
+      }
+    }
+  }
+
+  &__btns {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn-one {
+    height: 44px;
+    padding: 11px 18px;
+    height: 44px;
+    background: #2a2f39;
+    border-radius: 52px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn-two {
+    padding: 11px 18px;
+    height: 44px;
+    border: 2px solid #00c39a;
+    border-radius: 42px;
+    cursor: pointer;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00c39a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

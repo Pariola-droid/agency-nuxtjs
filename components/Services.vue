@@ -1,7 +1,9 @@
 <template>
   <div class="services">
     <div class="services__writeup">
-      <h2 class="services__tagline">Our service we can help you with</h2>
+      <h2 class="services__tagline">
+        <span>Our services we can </span><span>help you with</span>
+      </h2>
       <p class="services__caption">
         We have many interesting services with profesional team, that will help
         your work to be better

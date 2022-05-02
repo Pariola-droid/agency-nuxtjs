@@ -80,7 +80,7 @@
       }
     }
   }
-  @media (max-width: 42rem) {
+  @include media("<=phone") {
     padding: 0 20px;
     &-card {
       flex-direction: column;
