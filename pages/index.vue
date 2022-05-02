@@ -3,5 +3,6 @@
     <Works />
     <Services />
     <AgencyWorks />
+    <Pricing />
   </div>
 </template>
