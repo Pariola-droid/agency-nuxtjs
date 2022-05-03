@@ -11,6 +11,10 @@
   display: grid;
   place-items: center;
 
+  @include media("<=phone") {
+    display: none;
+  }
+
   &__wrapper {
     width: 1092.86px;
     height: fit-content;
