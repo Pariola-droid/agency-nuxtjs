@@ -4,10 +4,6 @@
   display: grid;
   place-items: center;
 
-  @include media("<=phone") {
-    display: none;
-  }
-
   &__wrapper {
     width: 1170px;
     height: fit-content;
@@ -17,6 +13,11 @@
     align-items: center;
     flex-direction: column;
 
+    @include media("<=phone") {
+      width: 88%;
+      margin: 100px auto;
+    }
+
     &-texts {
       width: 100%;
       height: fit-content;
@@ -25,11 +26,24 @@
       justify-content: space-between;
       margin-bottom: 60px;
 
+      @include media("<=phone") {
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       & h3 {
         font-weight: 500;
         font-size: 52px;
         line-height: 64px;
         max-width: 729px;
+
+        @include media("<=phone") {
+          font-size: 36px;
+          line-height: 46px;
+          max-width: 349px;
+          margin-bottom: 24px;
+        }
       }
 
       & a {
@@ -49,10 +63,24 @@
       align-items: center;
       justify-content: space-between;
 
+      @include media("<=phone") {
+        flex-direction: column;
+      }
+
       &-display {
         width: 570px;
         height: 390px;
         position: relative;
+        overflow: hidden;
+
+        @include media("<=phone") {
+          width: 350px;
+          height: 457px;
+
+          &:not(:last-of-type) {
+            margin-bottom: 35px;
+          }
+        }
 
         &-a {
           width: 62px;
@@ -63,6 +91,10 @@
           border-radius: 39px;
           margin-top: 34px;
           margin-left: auto;
+
+          @include media("<=phone") {
+            margin-left: unset !important;
+          }
 
           & a {
             width: 100%;
@@ -91,10 +123,19 @@
         &-abs1 {
           position: absolute;
           bottom: 0;
+
+          @include media("<=phone") {
+            left: 143px;
+          }
         }
         &-abs2 {
           position: absolute;
           bottom: 0;
+
+          @include media("<=phone") {
+            left: 160px;
+            bottom: -20px;
+          }
         }
 
         &:nth-child(1) {
@@ -102,6 +143,10 @@
           padding-top: 31px;
           padding-left: 47px;
           padding-right: 30.67px;
+
+          @include media("<=phone") {
+            padding-left: 35px;
+          }
 
           & p {
             max-width: 447px;
@@ -113,6 +158,10 @@
           padding-top: 39px;
           padding-left: 50px;
           padding-right: 30.67px;
+
+          @include media("<=phone") {
+            padding-left: 30px;
+          }
 
           & p {
             max-width: 496px;
