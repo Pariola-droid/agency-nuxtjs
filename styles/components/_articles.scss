@@ -15,7 +15,8 @@
 
     @include media("<=phone") {
       width: 88%;
-      margin: 100px auto;
+      margin-top: 0;
+      margin-bottom: 100px;
     }
 
     &-texts {

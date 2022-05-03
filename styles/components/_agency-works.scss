@@ -82,6 +82,8 @@
   }
   @media (max-width: 42rem) {
     padding: 0 20px;
+    padding-bottom: 75px !important;
+    margin-bottom: 100px !important;
     &-card {
       flex-direction: column;
       flex: 1;
