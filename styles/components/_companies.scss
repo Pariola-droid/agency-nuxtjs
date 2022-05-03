@@ -1,3 +1,9 @@
+@keyframes breathe {
+  100% {
+    transform: scale(1.2) rotate(360deg);
+  }
+}
+
 .company {
   margin-top: 190px;
   height: fit-content;
@@ -50,13 +56,51 @@
       place-items: center;
       height: 487.67px;
       margin-top: -40px;
-      background-color: #00c39a;
+      overflow: hidden;
+      // background-color: #00c39a;
 
       & img {
         position: absolute;
       }
 
       &-atom {
+        top: 120px;
+        -webkit-animation: breathe 2s linear infinite;
+        animation: breathe 2s linear infinite;
+        -webkit-animation-direction: alternate !important;
+        animation-direction: alternate !important;
+      }
+
+      // sphere 2
+      &-wb {
+        left: 9px;
+        top: 122.74px;
+      }
+      &-cv {
+        right: 19.86px;
+        top: 119.74px;
+      }
+
+      // sphere 1
+      &-up {
+        left: 139px;
+        bottom: 95px;
+      }
+      &-ab {
+        right: 150.86px;
+        bottom: 95px;
+      }
+
+      // sphere 0
+      &-cc {
+        bottom: 46.93px + 50px;
+      }
+      &-gg {
+        left: 241px;
+        bottom: 260px;
+      }
+      &-mc {
+        right: 218px;
         top: 120px;
       }
     }
