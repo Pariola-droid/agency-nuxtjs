@@ -14,6 +14,14 @@
     font-size: 52px;
     line-height: 4rem;
     width: 70%;
+    &-one {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    &-two {
+      opacity: 0;
+      transform: translateY(50px);
+    }
     span {
       display: block;
     }

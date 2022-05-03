@@ -35,6 +35,12 @@ export default {
         src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
         type: "text/javascript",
         crossorigin: "anonymous"
+      },
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js",
+        type: "text/javascript",
+        crossorigin: "anonymous"
       }
     ]
   },
