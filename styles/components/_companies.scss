@@ -8,7 +8,57 @@
   &__wrapper {
     width: 1092.86px;
     height: fit-content;
-    padding: 10px;
-    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      & h3 {
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 64px;
+        text-align: center;
+        max-width: 796px;
+      }
+
+      & button {
+        padding: 0px 30px;
+        height: 55px;
+        border: 2px solid #00c39a;
+        border-radius: 38px;
+        margin-top: 38px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #00c39a;
+        cursor: pointer;
+        z-index: 9;
+      }
+    }
+
+    &-spheres {
+      width: 100%;
+      height: fit-content;
+      padding: 40px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      height: 487.67px;
+      margin-top: -40px;
+      background-color: #00c39a;
+
+      & img {
+        position: absolute;
+      }
+
+      &-atom {
+        top: 120px;
+      }
+    }
   }
 }
