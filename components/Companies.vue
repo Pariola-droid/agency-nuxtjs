@@ -59,37 +59,8 @@
         </div>
 
         <div class="company__wrapper-spheresMobile">
-          <img :src="require('../assets/svg/sphere-mobile0.svg')" alt="" />
-          <img :src="require('../assets/svg/sphere-mobile1.svg')" alt="" />
-
-          <!-- sphere 1 -->
-          <img
-            class="company__wrapper-spheres-up"
-            :src="require('../assets/svg/upwork.svg')"
-            alt=""
-          />
-          <img
-            class="company__wrapper-spheres-ab"
-            :src="require('../assets/svg/adobe.svg')"
-            alt=""
-          />
-
-          <!-- sphere 0 -->
-          <img
-            class="company__wrapper-spheres-cc"
-            :src="require('../assets/svg/creative-cloud.svg')"
-            alt=""
-          />
-          <img
-            class="company__wrapper-spheres-mc"
-            :src="require('../assets/svg/mailchimp.svg')"
-            alt=""
-          />
-          <img
-            class="company__wrapper-spheres-gg"
-            :src="require('../assets/svg/google.svg')"
-            alt=""
-          />
+          <img class="company__wrapper-spheresMobile-s0" :src="require('../assets/svg/sphere-mobile0.svg')" alt="" />
+          <img class="company__wrapper-spheresMobile-s1" :src="require('../assets/svg/sphere-mobile1.svg')" alt="" />
         </div>
       </div>
     </section>
