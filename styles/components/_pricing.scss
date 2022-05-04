@@ -114,6 +114,7 @@
   @include media("<=phone") {
     padding: 0 20px;
     margin: 0;
+    margin-bottom: 80px;
     &__header {
       font-size: 36px;
       line-height: 46px;
