@@ -153,11 +153,15 @@
       max-width: 388px;
       height: fit-content;
       position: relative;
-      display: grid;
+      display: none;
       place-items: center;
       height: 309px;
       margin-top: 67px;
       // overflow: hidden;
+
+      @include media("<=phone") {
+        display: grid;
+      }
 
       & img {
         position: absolute;
