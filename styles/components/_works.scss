@@ -49,7 +49,6 @@
       transform: scale(1.05);
     }
   }
-
   @include media("<=phone") {
     margin: 100px 0;
     padding: 0;
@@ -72,5 +71,9 @@
         display: none;
       }
     }
+  }
+  @include media(">=LGdesktop") {
+    margin: 180px auto 180px;
+    max-width: 1440px;
   }
 }

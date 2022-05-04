@@ -13,6 +13,7 @@
     margin: 68px 0;
     display: flex;
     column-gap: 30px;
+    place-content: center;
     margin-bottom: 190px;
   }
   &__card {
@@ -110,7 +111,7 @@
       line-height: 24px;
     }
   }
-  @media (max-width: 42rem) {
+  @include media("<=phone") {
     padding: 0 20px;
     margin: 0;
     margin-bottom: 80px;
@@ -127,6 +128,13 @@
     }
     &__card {
       width: 100%;
+    }
+  }
+  @include media(">=LGdesktop") {
+    margin: 0 auto;
+    max-width: 1440px;
+    &__items {
+      place-content: center;
     }
   }
 }

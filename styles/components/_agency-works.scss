@@ -74,13 +74,14 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      overflow: hidden;
       &.bg-green {
         background: #395051;
         align-items: center;
       }
     }
   }
-  @media (max-width: 42rem) {
+  @include media("<=phone") {
     padding: 0 20px;
     padding-bottom: 75px !important;
     margin-bottom: 100px !important;
@@ -110,5 +111,10 @@
         }
       }
     }
+  }
+  @include media(">=LGdesktop") {
+    margin: 0 auto 180px;
+    padding: 10px 20vw 180px;
+    width: 100%;
   }
 }
