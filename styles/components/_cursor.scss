@@ -1,0 +1,32 @@
+@media screen and (min-width: 1100px) {
+  /* * {
+    cursor: none !important;
+  } */
+
+  .custom-cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  .custom-cursor__ball--big {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+  }
+
+  .custom-cursor__ball--small {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #000;
+    border-radius: 50%;
+  }
+}
