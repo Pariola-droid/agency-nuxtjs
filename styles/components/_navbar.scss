@@ -1,25 +1,39 @@
+@keyframes nav_nime {
+  to {
+    top: 0;
+  }
+}
+
 .navbar {
-  height: fit-content;
+  height: max-content;
+  max-height: 80px;
   width: 100%;
   display: grid;
   place-items: center;
   padding-top: 21px;
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   z-index: 9998;
+  animation-name: nav_nime;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
 
   @include media("<=phone") {
-    display: none;
+    padding-top: 30px;
   }
 
   &__wrap {
     width: 1320px;
     height: 44px;
-    // background-color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media("<=phone") {
+      width: 88%;
+    }
   }
 
   &__logo {
@@ -33,6 +47,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include media("<=phone") {
+      display: none;
+    }
 
     & li {
       color: #fdfdfd;
@@ -53,37 +71,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  &__btn-one {
-    height: 44px;
-    padding: 11px 18px;
-    height: 44px;
-    background: #2a2f39;
-    border-radius: 52px;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    @include media("<=phone") {
+      display: none;
+    }
 
-  &__btn-two {
-    padding: 11px 18px;
-    height: 44px;
-    border: 2px solid #00c39a;
-    border-radius: 42px;
-    cursor: pointer;
-    margin-left: 12px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #00c39a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &__btn-one {
+      height: 44px;
+      padding: 11px 18px;
+      height: 44px;
+      background: #2a2f39;
+      border-radius: 52px;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__btn-two {
+      padding: 11px 18px;
+      height: 44px;
+      border: 2px solid #00c39a;
+      border-radius: 42px;
+      cursor: pointer;
+      margin-left: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: #00c39a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

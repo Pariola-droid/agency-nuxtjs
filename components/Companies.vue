@@ -57,6 +57,11 @@
             alt=""
           />
         </div>
+
+        <div class="company__wrapper-spheresMobile">
+          <img class="company__wrapper-spheresMobile-s0" :src="require('../assets/svg/sphere-mobile0.svg')" alt="" />
+          <img class="company__wrapper-spheresMobile-s1" :src="require('../assets/svg/sphere-mobile1.svg')" alt="" />
+        </div>
       </div>
     </section>
   </transition>

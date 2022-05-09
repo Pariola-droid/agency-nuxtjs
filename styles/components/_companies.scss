@@ -3,6 +3,22 @@
     transform: scale(1.2) rotate(360deg);
   }
 }
+@keyframes turnLeft {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+// @keyframes turnRight {
+//   0% {
+//     transform: rotate(5deg);
+//   }
+//   100% {
+//     transform: rotate(-5deg);
+//   }
+// }
 
 .company {
   margin-top: 190px;
@@ -11,12 +27,22 @@
   display: grid;
   place-items: center;
 
+  @include media("<=phone") {
+    margin-bottom: 100px !important;
+    margin-top: 0;
+    overflow: hidden;
+  }
+
   &__wrapper {
     width: 1092.86px;
     height: fit-content;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @include media("<=phone") {
+      width: 88%;
+    }
 
     &-text {
       display: flex;
@@ -30,6 +56,12 @@
         line-height: 64px;
         text-align: center;
         max-width: 796px;
+
+        @include media("<=phone") {
+          font-size: 36px;
+          line-height: 46px;
+          max-width: 333px;
+        }
       }
 
       & button {
@@ -44,6 +76,14 @@
         color: #00c39a;
         cursor: pointer;
         z-index: 9;
+
+        @include media("<=phone") {
+          padding: 0px 36px;
+          height: 60px;
+          margin-top: 24px;
+          font-size: 20px;
+          line-height: 23px;
+        }
       }
     }
 
@@ -57,7 +97,10 @@
       height: 487.67px;
       margin-top: -40px;
       overflow: hidden;
-      // background-color: #00c39a;
+
+      @include media("<=phone") {
+        display: none;
+      }
 
       & img {
         position: absolute;
@@ -102,6 +145,40 @@
       &-mc {
         right: 218px;
         top: 120px;
+      }
+    }
+
+    &-spheresMobile {
+      width: 100%;
+      max-width: 388px;
+      height: fit-content;
+      position: relative;
+      display: none;
+      place-items: center;
+      height: 309px;
+      margin-top: 67px;
+      // overflow: hidden;
+
+      @include media("<=phone") {
+        display: grid;
+      }
+
+      & img {
+        position: absolute;
+      }
+
+      &-s0 {
+        left: 14px;
+        -webkit-animation: turnRight 5s linear infinite;
+        animation: turnRight 5s linear infinite;
+        -webkit-animation-direction: alternate !important;
+        animation-direction: alternate !important;
+      }
+      &-s1 {
+        -webkit-animation: turnLeft 5s linear infinite;
+        animation: turnLeft 5s linear infinite;
+        -webkit-animation-direction: alternate !important;
+        animation-direction: alternate !important;
       }
     }
   }

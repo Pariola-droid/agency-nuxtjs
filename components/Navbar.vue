@@ -13,8 +13,8 @@
           <li><a href="">More</a></li>
         </ul>
         <div class="navbar__btns">
-          <button class="navbar__btn-one">Log In</button>
-          <button class="navbar__btn-two">Sign Up</button>
+          <button class="navbar__btns__btn-one">Log In</button>
+          <button class="navbar__btns__btn-two">Sign Up</button>
         </div>
       </div>
     </nav>

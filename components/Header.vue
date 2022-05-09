@@ -80,12 +80,15 @@
                 <small>Your order is on its way!</small>
               </div>
               <div class="header__wrapper__bottom-wrap__left-l3-stack">
-                <div class="header__wrapper__bottom-wrap__left-l3-stack-stacked">
-                </div>
-                <div class="header__wrapper__bottom-wrap__left-l3-stack-stacked">
-                </div>
-                <div class="header__wrapper__bottom-wrap__left-l3-stack-stacked">
-                </div>
+                <div
+                  class="header__wrapper__bottom-wrap__left-l3-stack-stacked"
+                ></div>
+                <div
+                  class="header__wrapper__bottom-wrap__left-l3-stack-stacked"
+                ></div>
+                <div
+                  class="header__wrapper__bottom-wrap__left-l3-stack-stacked"
+                ></div>
               </div>
               <img
                 class="header__wrapper__bottom-wrap__left-l3-illy1"
