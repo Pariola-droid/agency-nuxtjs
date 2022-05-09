@@ -1,3 +1,9 @@
+@keyframes nav_nime {
+  to {
+    top: 0;
+  }
+}
+
 .navbar {
   height: max-content;
   max-height: 80px;
@@ -6,9 +12,13 @@
   place-items: center;
   padding-top: 21px;
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   z-index: 9998;
+  animation-name: nav_nime;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
 
   @include media("<=phone") {
     padding-top: 30px;
