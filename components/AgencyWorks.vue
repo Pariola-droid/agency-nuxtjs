@@ -40,6 +40,16 @@
     </div>
   </transition>
 </template>
+
+<style>
+*,
+html,
+body,
+a,
+button {
+  cursor: none;
+}
+</style>
 <script>
 import Intersect from "vue-intersect";
 
@@ -65,7 +75,8 @@ export default {
       })
       .from(".agency-works-card__image-container img", {
         opacity: 0,
-        y: 90
+        y: 100,
+        delay: 0.6
       });
   },
   methods: {

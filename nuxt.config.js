@@ -30,17 +30,6 @@ export default {
         crossorigin: "anonymous",
         type: "text/javascript",
         body: true
-      },
-      {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
-        type: "text/javascript",
-        crossorigin: "anonymous"
-      },
-      {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js",
-        type: "text/javascript",
-        crossorigin: "anonymous"
       }
     ]
   },
@@ -62,6 +51,36 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["nuxt-gsap-module"],
 
+  pageTransition: {
+    name: "page",
+    mode: "out-in",
+    css: false,
+
+    beforeEnter(el) {
+      this.$gsap.set(el, {
+        opacity: 0
+      });
+    },
+
+    enter(el, done) {
+      this.$gsap.to(el, {
+        opacity: 1,
+        duration: 0.5,
+        ease: "power2.inOut",
+        onComplete: done
+      });
+    },
+
+    leave(el, done) {
+      this.$gsap.to(el, {
+        opacity: 0,
+        duration: 0.5,
+        ease: "power2.inOut",
+        onComplete: done
+      });
+    }
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -70,6 +89,14 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  gsap: {
+    extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true,
+      observer: true
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}

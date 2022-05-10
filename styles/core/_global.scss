@@ -4,3 +4,7 @@ body {
   color: $text-white;
   font-weight: 400;
 }
+
+* {
+  will-change: transform;
+}

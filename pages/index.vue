@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Cursor />
+    <CustomCusor />
     <Header />
     <Works />
     <Services />

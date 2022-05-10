@@ -103,7 +103,7 @@ export default {
       .to(".services__tagline-one", {
         opacity: 1,
         y: "0",
-        ease: "Power2.easeout",
+        ease: "Power2.easeInOut",
         stagger: 0.15
         //duration: 3
       })
@@ -124,23 +124,27 @@ export default {
       .from(".services__card.one", {
         opacity: 0,
         y: "350px",
-        stagger: 0.15
+        stagger: 0.15,
+        ease: "Power2.easeInOut"
       })
       .from(".services__card.four", {
         delay: 0.4,
         opacity: 0,
         y: 60,
-        stagger: 0.15
+        stagger: 0.15,
+        ease: "Power2.easeInOut"
       })
       .from(".services__card.three", {
         opacity: 0,
         y: 60,
-        stagger: 0.15
+        stagger: 0.15,
+        ease: "Power2.easeInOut"
       })
       .from(".services__card.two", {
         opacity: 0,
         y: 60,
-        stagger: 0.15
+        stagger: 0.15,
+        ease: "Power2.easeInOut"
       });
   },
   methods: {
