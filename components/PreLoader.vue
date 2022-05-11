@@ -16,7 +16,7 @@
   z-index: 999999999;
   &-item {
     width: 33.33%;
-    background: black;
+    background: #1b1f24;
   }
 }
 </style>
