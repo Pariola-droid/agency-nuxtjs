@@ -6,7 +6,6 @@
       { 'g-cursor_hide': hideCursor }
     ]"
   >
-    <div :style="cursorCircle" class="g-cursor__circle"></div>
     <div class="g-cursor__point" ref="point" :style="cursorPoint"></div>
   </div>
 </template>
@@ -15,6 +14,7 @@
 .g-cursor {
   position: absolute;
   z-index: 999999;
+  top: 0;
   &_hide {
     opacity: 0;
     width: 60px;
@@ -22,27 +22,13 @@
     transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
   }
 
-  &__circle {
-    pointer-events: none;
-    user-select: none;
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    z-index: 5555;
-    backface-visibility: hidden;
-    transition: opacity 0.6s ease;
-  }
-
   &__point {
     top: 0;
     left: 0;
-    position: fixed;
-    width: 10px;
-    height: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
     pointer-events: none;
     user-select: none;
     border-radius: 100%;
@@ -76,9 +62,6 @@ export default {
     };
   },
   computed: {
-    cursorCircle: function() {
-      return `transform: translateX(${this.xParent}px) translateY(${this.yParent}px) translateZ(0) translate3d(0, 0, 0);`;
-    },
     cursorPoint: function() {
       return `transform: translateX(${this.xChild - 3}px) translateY(${this
         .yChild - 3}px) translateZ(0) translate3d(0, 0, 0);`;
@@ -95,11 +78,11 @@ export default {
   },
   methods: {
     moveCursor: function(e) {
-      this.xChild = e.clientX;
-      this.yChild = e.clientY;
+      this.xChild = e.pageX;
+      this.yChild = e.pageY;
       setTimeout(() => {
-        this.xParent = e.clientX - 15;
-        this.yParent = e.clientY - 15;
+        this.xParent = e.pageX - 15;
+        this.yParent = e.pageX - 15;
       }, 100);
     }
   }

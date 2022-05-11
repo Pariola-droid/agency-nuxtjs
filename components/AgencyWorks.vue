@@ -46,7 +46,11 @@
 html,
 body,
 a,
-button {
+button,
+div,
+p,
+span,
+img {
   cursor: none;
 }
 </style>

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <CustomCusor />
     <Header />
     <Works />
     <Services />
