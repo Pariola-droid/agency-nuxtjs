@@ -32,7 +32,6 @@
     pointer-events: none;
     user-select: none;
     border-radius: 100%;
-    background: #fff;
     z-index: 55555555;
     backface-visibility: hidden;
     will-change: transform;
