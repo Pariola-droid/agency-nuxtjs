@@ -83,7 +83,6 @@
             display: grid;
             place-items: center;
             border-radius: 100%;
-            cursor: pointer;
 
             @include media("<=phone") {
               width: 32px;

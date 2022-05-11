@@ -7,6 +7,8 @@
       crossorigin="anonymous"
       onload="this.rel='stylesheet'"
     />
+    <PreLoader />
+    <CustomCusor />
     <Navbar />
     <Nuxt />
     <Footer />
