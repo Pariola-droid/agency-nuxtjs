@@ -51,7 +51,7 @@ div,
 p,
 span,
 img {
-  cursor: none;
+  /* cursor: none; */
 }
 </style>
 <script>

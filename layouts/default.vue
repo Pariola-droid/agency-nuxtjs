@@ -8,7 +8,7 @@
       onload="this.rel='stylesheet'"
     />
     <PreLoader />
-    <CustomCusor />
+    <!-- <CustomCusor /> -->
     <Navbar />
     <Nuxt />
     <Footer />

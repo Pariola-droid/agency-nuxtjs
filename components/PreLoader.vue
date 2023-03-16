@@ -53,7 +53,10 @@ export default {
       })
       .to(".preloader-item.three", {
         y: "-100%",
-        duration: 1
+        duration: 1,
+        onComplete: () => {
+          this.$gsap.set(".preloader", { display: "none" });
+        }
       });
   }
 };
