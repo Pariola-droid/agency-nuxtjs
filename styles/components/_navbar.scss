@@ -1,3 +1,111 @@
-.navbar {
+@keyframes nav_nime {
+  to {
+    top: 0;
+  }
+}
 
+.navbar {
+  height: max-content;
+  max-height: 80px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-top: 21px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  z-index: 9998;
+  animation-name: nav_nime;
+  animation-timing-function: ease-in;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+
+  @include media("<=phone") {
+    padding-top: 30px;
+  }
+
+  &__wrap {
+    width: 1320px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media("<=phone") {
+      width: 88%;
+    }
+  }
+
+  &__logo {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+    color: #fdfdfd;
+  }
+
+  &__lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media("<=phone") {
+      display: none;
+    }
+
+    & li {
+      color: #fdfdfd;
+      margin: 0 20px;
+
+      & a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fdfdfd;
+      }
+    }
+  }
+
+  &__btns {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media("<=phone") {
+      display: none;
+    }
+
+    &__btn-one {
+      height: 44px;
+      padding: 11px 18px;
+      height: 44px;
+      background: #2a2f39;
+      border-radius: 52px;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__btn-two {
+      padding: 11px 18px;
+      height: 44px;
+      border: 2px solid #00c39a;
+      border-radius: 42px;
+
+      margin-left: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: #00c39a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
